@@ -2,7 +2,13 @@
     "locations": [
         {
             "id": 1,
+            "name": "Candy Land",
             "address": "1842 Rainbow Rd"
+        },
+        {
+            "id": 2,
+            "name": "Kandy Krush",
+            "address": "1535 Sugar Avenue"
         }
     ],
     "products": [
