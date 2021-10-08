@@ -1,0 +1,51 @@
+{
+    "locations": [
+        {
+            "id": 1,
+            "address": "1842 Rainbow Rd"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "locationId": 1,
+            "productTypeId": 1,
+            "productName": "Gummy Worms"
+        }
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "locationId": 1,
+            "employeeName": "John Walker"
+        }
+    ],
+    "productTypes": [
+        {
+            "id": 1,
+            "productType": "gummies"
+        }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "customerName": "Tyler Smith"
+        }
+    ],
+    "purchases": [
+        {
+            "id": 1,
+            "customerId": 1,
+            "locationId": 1,
+            "transactionId": 1,
+            "purchaseDate": "YYYY/MM/DD"
+        }
+    ],
+    "transactions": [
+        {
+            "id": 1,
+            "transactionId": 1,
+            "productId": 1
+        }
+    ]
+}
