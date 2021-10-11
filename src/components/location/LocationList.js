@@ -4,11 +4,13 @@ import { LocationCard } from './LocationCard';
 
 export const LocationList = () => {
     const [locations, setLocations] = useState([]);
+    // get locations from api:
     const getLocations = () => {
         return getAllLocations().then(locationsFromAPI => {
             setLocations(locationsFromAPI)
         })
     }
+    // populate locations with data from api:
     useEffect(() => {
         getLocations()
     }, [])

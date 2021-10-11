@@ -1,57 +1,102 @@
 {
-    "locations": [
-        {
-            "id": 1,
-            "name": "Candy Land",
-            "address": "1842 Rainbow Rd"
-        },
-        {
-            "id": 2,
-            "name": "Kandy Krush",
-            "address": "1535 Sugar Avenue"
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "locationId": 1,
-            "productTypeId": 1,
-            "productName": "Gummy Worms"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "locationId": 1,
-            "employeeName": "John Walker"
-        }
-    ],
-    "productTypes": [
-        {
-            "id": 1,
-            "productType": "gummies"
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "customerName": "Tyler Smith"
-        }
-    ],
-    "purchases": [
-        {
-            "id": 1,
-            "customerId": 1,
-            "locationId": 1,
-            "transactionId": 1,
-            "purchaseDate": "YYYY/MM/DD"
-        }
-    ],
-    "transactions": [
-        {
-            "id": 1,
-            "transactionId": 1,
-            "productId": 1
-        }
-    ]
+  "locations": [
+    {
+      "id": 1,
+      "name": "Candy Land",
+      "address": "1842 Rainbow Rd"
+    },
+    {
+      "id": 2,
+      "name": "Kandy Krush",
+      "address": "1535 Sugar Avenue"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "locationId": 1,
+      "productTypeId": 1,
+      "productName": "Gummy Worms",
+      "price": 1.99
+    },
+    {
+      "locationId": 1,
+      "productTypeId": 2,
+      "productName": "Jolly Rogers",
+      "price": 1.49,
+      "id": 2
+    },
+    {
+      "locationId": 1,
+      "productTypeId": 5,
+      "productName": "Sprite",
+      "price": 0.75,
+      "id": 3
+    },
+    {
+      "locationId": 2,
+      "productTypeId": 4,
+      "productName": "Lindt 80% Dark Chocolate",
+      "price": 2.99,
+      "id": 4
+    },
+    {
+      "locationId": 2,
+      "productTypeId": 3,
+      "productName": "Spearmint Gum",
+      "price": 1,
+      "id": 5
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "locationId": 1,
+      "employeeName": "John Walker"
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1,
+      "productType": "gummies"
+    },
+    {
+      "productType": "Hard Candy",
+      "id": 2
+    },
+    {
+      "productType": "Gum",
+      "id": 3
+    },
+    {
+      "productType": "Chocolate",
+      "id": 4
+    },
+    {
+      "productType": "Sodas",
+      "id": 5
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Tyler Smith"
+    }
+  ],
+  "purchases": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "locationId": 1,
+      "transactionId": 1,
+      "purchaseDate": "YYYY/MM/DD"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "transactionId": 1,
+      "productId": 1
+    }
+  ]
 }
