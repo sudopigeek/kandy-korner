@@ -14,36 +14,41 @@
   "products": [
     {
       "id": 1,
+      "imageUrl": "https://m.media-amazon.com/images/I/61jCsAjOlSL._SL1000_.jpg",
       "locationId": 1,
       "productTypeId": 1,
       "productName": "Gummy Worms",
       "price": 1.99
     },
     {
+      "imageUrl": "https://m.media-amazon.com/images/I/718yzsoTAeL._AC_SL1500_.jpg",
       "locationId": 1,
       "productTypeId": 2,
-      "productName": "Jolly Rogers",
+      "productName": "Jolly Rancher",
       "price": 1.49,
       "id": 2
     },
     {
+      "imageUrl": "https://m.media-amazon.com/images/I/81CpHnpaOXL._SL1500_.jpg",
       "locationId": 1,
       "productTypeId": 5,
       "productName": "Sprite",
-      "price": 0.75,
+      "price": 3.99,
       "id": 3
     },
     {
+      "imageUrl": "https://m.media-amazon.com/images/I/71JoESFrwYL._SL1500_.jpg",
       "locationId": 2,
       "productTypeId": 4,
-      "productName": "Lindt 80% Dark Chocolate",
+      "productName": "Lindt 78% Dark Chocolate",
       "price": 2.99,
       "id": 4
     },
     {
+      "imageUrl": "https://m.media-amazon.com/images/I/71NAap17iGL._SL1000_.jpg",
       "locationId": 2,
       "productTypeId": 3,
-      "productName": "Spearmint Gum",
+      "productName": "EXTRA Spearmint Gum",
       "price": 1,
       "id": 5
     }
@@ -58,7 +63,7 @@
   "productTypes": [
     {
       "id": 1,
-      "productType": "gummies"
+      "productType": "Gummies"
     },
     {
       "productType": "Hard Candy",
@@ -73,7 +78,7 @@
       "id": 4
     },
     {
-      "productType": "Sodas",
+      "productType": "Soda",
       "id": 5
     }
   ],
