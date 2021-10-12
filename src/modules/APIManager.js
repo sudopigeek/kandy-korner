@@ -24,7 +24,7 @@ export const getProductById = (productId) => {
 }
 
 export const getAllProducts = () => {
-  return fetch(`${remoteURL}/products?_expand=location&_expand=productType`)
+  return fetch(`${remoteURL}/products?_expand=location&_expand=productType&_sort=productTypeId`)
   .then(res => res.json())
 }
 
