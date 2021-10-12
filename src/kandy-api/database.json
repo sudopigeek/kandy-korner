@@ -1,57 +1,107 @@
 {
-    "locations": [
-        {
-            "id": 1,
-            "name": "Candy Land",
-            "address": "1842 Rainbow Rd"
-        },
-        {
-            "id": 2,
-            "name": "Kandy Krush",
-            "address": "1535 Sugar Avenue"
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "locationId": 1,
-            "productTypeId": 1,
-            "productName": "Gummy Worms"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "locationId": 1,
-            "employeeName": "John Walker"
-        }
-    ],
-    "productTypes": [
-        {
-            "id": 1,
-            "productType": "gummies"
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "customerName": "Tyler Smith"
-        }
-    ],
-    "purchases": [
-        {
-            "id": 1,
-            "customerId": 1,
-            "locationId": 1,
-            "transactionId": 1,
-            "purchaseDate": "YYYY/MM/DD"
-        }
-    ],
-    "transactions": [
-        {
-            "id": 1,
-            "transactionId": 1,
-            "productId": 1
-        }
-    ]
+  "locations": [
+    {
+      "id": 1,
+      "name": "Candy Land",
+      "address": "1842 Rainbow Rd"
+    },
+    {
+      "id": 2,
+      "name": "Kandy Krush",
+      "address": "1535 Sugar Avenue"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "imageUrl": "https://m.media-amazon.com/images/I/61jCsAjOlSL._SL1000_.jpg",
+      "locationId": 1,
+      "productTypeId": 1,
+      "productName": "Gummy Worms",
+      "price": 1.99
+    },
+    {
+      "imageUrl": "https://m.media-amazon.com/images/I/718yzsoTAeL._AC_SL1500_.jpg",
+      "locationId": 1,
+      "productTypeId": 2,
+      "productName": "Jolly Rancher",
+      "price": 1.49,
+      "id": 2
+    },
+    {
+      "imageUrl": "https://m.media-amazon.com/images/I/81CpHnpaOXL._SL1500_.jpg",
+      "locationId": 1,
+      "productTypeId": 5,
+      "productName": "Sprite",
+      "price": 3.99,
+      "id": 3
+    },
+    {
+      "imageUrl": "https://m.media-amazon.com/images/I/71JoESFrwYL._SL1500_.jpg",
+      "locationId": 2,
+      "productTypeId": 4,
+      "productName": "Lindt 78% Dark Chocolate",
+      "price": 2.99,
+      "id": 4
+    },
+    {
+      "imageUrl": "https://m.media-amazon.com/images/I/71NAap17iGL._SL1000_.jpg",
+      "locationId": 2,
+      "productTypeId": 3,
+      "productName": "EXTRA Spearmint Gum",
+      "price": 0.49,
+      "id": 5
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "locationId": 1,
+      "employeeName": "John Walker"
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1,
+      "productType": "Gummies"
+    },
+    {
+      "productType": "Hard Candy",
+      "id": 2
+    },
+    {
+      "productType": "Gum",
+      "id": 3
+    },
+    {
+      "productType": "Chocolate",
+      "id": 4
+    },
+    {
+      "productType": "Soda",
+      "id": 5
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Tyler Smith"
+    }
+  ],
+  "purchases": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "locationId": 1,
+      "transactionId": 1,
+      "purchaseDate": "YYYY/MM/DD"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "transactionId": 1,
+      "productId": 1
+    }
+  ]
 }
