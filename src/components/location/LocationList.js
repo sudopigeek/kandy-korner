@@ -17,7 +17,7 @@ export const LocationList = () => {
     }, [])
     return (
         <div className="locationContainer">
-            <h1>Locations:</h1>
+            <h2>Locations:</h2>
             <div className="locations">
                 {/* check whether locations is null and show the subsequent cards */}
                 {locations == null ? <FetchErrorCard message={"Sorry, we couldn't get our locations. Maybe check your internet connection?"} /> : locations.map(location => <LocationCard key={location.id} location={location} />)}

@@ -17,7 +17,7 @@ export const ProductList = () => {
     }, [])
     return (
         <div className="productContainer">
-            <h1>Products:</h1>
+            <h2>Products:</h2>
             <div className="products">
                 {/* check whether products is null and show the subsequent cards */}
                 {products == null ? <FetchErrorCard message={"Sorry, we couldn't get our products. Maybe check your internet connection?"} /> : products.map(product => <ProductCard key={product.id} product={product} />)}
