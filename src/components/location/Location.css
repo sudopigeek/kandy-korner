@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 .locations {
     display: flex;
     flex-wrap: wrap;
@@ -5,10 +7,13 @@
 }
   
 .location {
+    font-family: 'Josefin Sans', sans-serif;
     flex-basis: 28%;
     margin: 1em;
     padding: 1em;
-    border: 2px solid white;
+    border-radius: 15px;
+    border: 3px solid green;
+    background-color: white;
     min-width: 300px;
     max-width: 300px;
 }
