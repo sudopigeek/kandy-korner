@@ -1,0 +1,10 @@
+.fetchError {
+    background-color: rgb(255, 77, 77);
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+
+.fetchError h3 {
+    color: white;
+    margin: 5px;
+}

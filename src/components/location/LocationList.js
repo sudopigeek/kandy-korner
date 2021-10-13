@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllLocations } from '../../modules/APIManager';
 import { LocationCard } from './LocationCard';
+import { FetchErrorCard } from '../ErrorCards/FetchErrorCard';
 
 export const LocationList = () => {
     const [locations, setLocations] = useState([]);
@@ -18,7 +19,8 @@ export const LocationList = () => {
         <div className="locationContainer">
             <h1>Locations:</h1>
             <div className="locations">
-                {locations.map(location => <LocationCard key={location.id} location={location} />)}
+                {/* check whether locations is null and show the subsequent cards */}
+                {locations == null ? <FetchErrorCard message={"Sorry, we couldn't get our locations. Maybe check your internet connection?"} /> : locations.map(location => <LocationCard key={location.id} location={location} />)}
             </div>
         </div>
     )

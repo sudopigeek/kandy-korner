@@ -9,6 +9,9 @@ export const getLocationById = (locationId) => {
 export const getAllLocations = () => {
   return fetch(`${remoteURL}/locations`)
   .then(res => res.json())
+  .catch(function() {
+    return null;
+  }) 
 }
 
 export const closeLocation = (id) => {
@@ -24,8 +27,11 @@ export const getProductById = (productId) => {
 }
 
 export const getAllProducts = () => {
-  return fetch(`${remoteURL}/products?_expand=location&_expand=productType&_sort=productTypeId`)
+   return fetch(`${remoteURL}/products?_expand=location&_expand=productType&_sort=productTypeId`)
   .then(res => res.json())
+  .catch(function() {
+    return null;
+  }) 
 }
 
 export const removeProduct = (id) => {

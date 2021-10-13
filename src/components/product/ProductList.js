@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllProducts } from '../../modules/APIManager';
 import { ProductCard } from './ProductCard';
+import { FetchErrorCard } from '../ErrorCards/FetchErrorCard';
 
 export const ProductList = () => {
     const [products, setProducts] = useState([]);
@@ -18,7 +19,8 @@ export const ProductList = () => {
         <div className="productContainer">
             <h1>Products:</h1>
             <div className="products">
-                {products.map(product => <ProductCard key={product.id} product={product} />)}
+                {/* check whether products is null and show the subsequent cards */}
+                {products == null ? <FetchErrorCard message={"Sorry, we couldn't get our products. Maybe check your internet connection?"} /> : products.map(product => <ProductCard key={product.id} product={product} />)}
             </div>
         </div>
     )
